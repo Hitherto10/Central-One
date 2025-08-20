@@ -15,7 +15,7 @@ export default function Home() {
                     </div>
 
                     <div className={`mb-3`}>
-                        <p className={`border-l-4 text-md font-[500] font-[Montserrat] px-3  border-[#33D3D4] w-[550px]`}>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim <span className={`text-[#33D3D4]`}> velit mollit.</span></p>
+                        <p className={`border-l-4 text-md font-[500] font-[Montserrat] px-3  border-[#33D3D4] w-[550px]`}>Test Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim <span className={`text-[#33D3D4]`}> velit mollit.</span></p>
                     </div>
 
                     <div className={`mb-3`}>
