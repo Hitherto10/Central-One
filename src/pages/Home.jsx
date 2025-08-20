@@ -20,7 +20,7 @@ export default function Home() {
 
                     <div className={`mb-3`}>
                         <button className={`bg-[#33D3D4] relative font-[SF Pro Display] py-2 px-3 hover:cursor-pointer font-[700] text-white text-sm flex flex-row gap-3 rounded-3xl`}>
-                            <span className={` bottom-[1px] relative content-center`}>Get Started</span>
+                            <span className={` pl-2 relative content-center`}>Get Started</span>
                             <img
                             src={`${Images.right_Arrow}`}
                             className={`w-[25px]`}

@@ -14,14 +14,14 @@ export default function Header() {
                         <div className="flex flex-row gap-7">
                             {
                                 navLinks.map((navLink, index) => {
-                                    return ( <ul key={`${index}`}> <li>{navLink.name}</li> </ul> )
+                                    return ( <ul key={`${index}`}> <li className={`hover:cursor-pointer`}> {navLink.name}</li> </ul> )
                                 })
                             }
                         </div>
                     </div>
 
                     <div className="w-1/4 flex justify-end">
-                        <button className={`bg-[#ffc250] font-[700] text-white text-[17px] py-3 w-32 rounded-tr-2xl rounded-bl-2xl`}>
+                        <button className={`bg-[#ffc250] font-[700] hover:cursor-pointer text-white text-[17px] py-3 w-32 rounded-tr-2xl rounded-bl-2xl`}>
                             Contact Us
                         </button>
                     </div>
