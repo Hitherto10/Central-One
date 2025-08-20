@@ -39,7 +39,7 @@ export default function Home() {
                         <img
                             src={`${Images.ldn_avatar}`}
                             alt="Landing background"
-                            className="!max-w-none w-[700px] right-24 relative h-auto object-cover"
+                            className="!max-w-none w-[700px] relative h-auto object-cover"
                             loading="eager"
                             style={{ zIndex: 0 }}
                         />

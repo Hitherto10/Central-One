@@ -6,7 +6,7 @@ export default function Header() {
         <div className="flex items-center top-3 relative justify-center">
             <header className="relative w-full mx-16">
                 <div className="bg-white z-20 absolute font-[Poppins] py-5 px-5 content-center items-center rounded-2xl flex flex-row w-full h-17">
-                    <div className="w-1/4">
+                    <div className="hover:cursor-pointer w-1/4">
                         <img src={``} alt="Logo"/>
                     </div>
 
