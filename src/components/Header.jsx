@@ -26,7 +26,7 @@ export default function Header() {
                         </button>
                     </div>
                 </div>
-                {/*<div className="bg-[#293c62] p-5 z-0 top-0 left-0 w-full h-17"></div>*/}
+                <div className="p-5 z-0 top-0 left-0 w-full h-17"></div>
             </header>
         </div>
     )
