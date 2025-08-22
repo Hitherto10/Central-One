@@ -1,32 +1,30 @@
 import React from 'react';
 import {navLinks} from "../utils/imports.jsx";
+import {Images} from "./images.jsx";
 
 export default function Header() {
     return (
-        <div className="flex items-center top-3 relative justify-center">
-            <header className="relative w-full mx-16">
-                <div className="bg-white z-20 absolute font-[Poppins] py-5 px-5 content-center items-center rounded-2xl flex flex-row w-full h-17">
+        <div className="flex items-center relative justify-center">
+            <header className="relative w-full">
+                <div className="bg-white z-20 font-[Outfit] py-5 px-5 content-center items-center justify-between flex flex-row w-full h-17">
                     <div className="hover:cursor-pointer w-1/4">
-                        <img src={``} alt="Logo"/>
+                        <img src={`${Images.logo_1}`} alt="Logo"/>
                     </div>
 
                     <div className="w-1/2 flex justify-center">
-                        <div className="flex flex-row gap-7">
+                        <div className="flex flex-row m-auto gap-16">
                             {
                                 navLinks.map((navLink, index) => {
-                                    return ( <ul key={`${index}`}> <li className={`hover:cursor-pointer`}> {navLink.name}</li> </ul> )
+                                    return ( <ul key={`${index}`}> <li className={`hover:cursor-pointer font-[500]`}> {navLink.name}</li> </ul> )
                                 })
                             }
                         </div>
-                    </div>
 
-                    <div className="w-1/4 flex justify-end">
-                        <button className={`bg-[#ffc250] font-[700] hover:cursor-pointer text-white text-[17px] py-3 w-32 rounded-tr-2xl rounded-bl-2xl`}>
+                        <button className={`bg-[#0c4d69] text-lg font-[500] hover:cursor-pointer text-white text-[17px] px-4 py-2.5 w-fit rounded-lg`}>
                             Contact Us
                         </button>
                     </div>
                 </div>
-                <div className="p-5 z-0 top-0 left-0 w-full h-17"></div>
             </header>
         </div>
     )

@@ -4,7 +4,7 @@ import Home from "./pages/Home.jsx";
 
 function App() {
   return (
-      <div className={`bg-[#eef2fb] w-full h-full m-0`}>
+      <div className={` w-full h-full m-0`}>
         <Header />
         <Home />
       </div>
