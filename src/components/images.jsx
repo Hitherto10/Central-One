@@ -9,6 +9,7 @@ import logo_1 from '../assets/logo_1.svg'
 import logo_2 from '../assets/logo_2.svg'
 import grid_image1 from '../assets/grid_image1.jpg'
 import grid_image2 from '../assets/grid_image2.jpg'
+import bg_image1 from '../assets/bg_image1.jpg'
 
 export const Images = {
     ldn_avatar,
@@ -22,4 +23,5 @@ export const Images = {
     logo_2,
     grid_image1,
     grid_image2,
+    bg_image1,
 }

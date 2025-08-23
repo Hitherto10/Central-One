@@ -1,11 +1,11 @@
 import React from 'react';
 import {Images} from "../components/images.jsx";
-import {engagementModels, processes, reasons, services} from "../utils/imports.jsx";
+import {engagementModels, processes, reasons} from "../utils/imports.jsx";
 
 export default function Home() {
     return (
         <div className={`m-auto relative bg-[#eef2fb]`}>
-            <section className={`w-7xl m-auto relative`}>
+            <section className={`max-w-7xl m-auto relative`}>
                 {/*Hero Section*/}
                 <div className={`m-auto max-w-7xl py-20 `}>
                     <div className={`justify-center ml-20 relative`}>
@@ -125,7 +125,7 @@ export default function Home() {
                 <div className={`flex justify-between h-auto mb-12 items-center`}>
                     <h2 className="font-[Outfit] my-auto text-4xl font-[700] ">We Offer a Wide <br /> Variety of IT Services</h2>
                     <button className={`bg-[#0c4d69] text-lg font-[500] hover:cursor-pointer text-white text-[17px] px-4 py-2.5 w-fit rounded-lg`}>
-                        Contact Us
+                       ALL SERVICES
                     </button>
                 </div>
 
@@ -147,6 +147,49 @@ export default function Home() {
                     ))}
                 </div>
             </section>
+
+            {/*Work Processes*/}
+            <section className={`my-16 max-w-7xl mx-auto`}>
+                <h1 className={`text-center text-5xl font-[Outfit] mb-5 font-semibold`}>We Follow the Process</h1>
+                <h3 className={`text-center text-lg font-[Outfit] mb-8 `}>Our Work Process</h3>
+                {/*<span className={`text-center`}>Our Work Process</span>*/}
+                <div className={`grid grid-cols-4`}>
+                    {processes.map((process, index) => (
+                        <div key={`${index}`} >
+                            <img src={`${process.Image}`} alt="process" className={` m-auto w-[198px]`}/>
+                            <h3 className={`text-center font-[Outfit] font-semibold my-3`}>{process.title}</h3>
+                            <p className={`text-center font-[Outfit] font-[300] text-[15px]`}>{process.description}</p>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
+            <section className="w-full flex justify-center relative">
+                <div className={`bg-gray-300 w-full h-[125px] bottom-0 absolute`}></div>
+                <div className={`h-[250px] z-10 overflow-y-hidden`}>
+                    <img
+                        src={`${Images.bg_image1}`}
+                        loading="lazy"
+                        alt=""
+                    />
+                </div>
+                <div className="absolute p-8 text-white my-auto content-center z-20 w-[1000px] h-[250px] bg-[var(--translucentbg)] max-w-7xl">
+                    <span className={`capitalize text-sm font-[Poppins]`}>We Carry more Than Just Good Coding Skills</span>
+                    <div className={`flex justify-between font-[Outfit] h-auto items-center`}>
+                        <h2 className=" my-auto text-4xl font-[700] ">let's built your website together!</h2>
+                        <button className={`border text-lg font-[500] hover:cursor-pointer text-white text-[17px] px-4 py-2.5 w-fit rounded-lg`}>
+                            Contact Us
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section className="w-full flex font-[Outfit] relative">
+                <div className={`bg-gray-300 m-auto pt-16 justify-center text-center w-full h-[125px]`}>
+                    <h2 className={`text-5xl font-[600]`}>Technologies & Frameworks</h2>
+                </div>
+            </section>
+
         </div>
     )
 }
