@@ -1,4 +1,18 @@
 import {Images} from "../components/images.jsx";
+import ldn_avatar from "../assets/ldn-avatar.svg";
+import right_Arrow from "../assets/right-arrow.png";
+import code_screen from "../assets/code-screen.svg";
+import step_1 from "../assets/04.svg";
+import step_2 from "../assets/03.svg";
+import step_3 from "../assets/02.svg";
+import step_4 from "../assets/01.svg";
+import logo_1 from "../assets/logo_1.svg";
+import logo_2 from "../assets/logo_2.svg";
+import grid_image1 from "../assets/grid_image1.jpg";
+import grid_image2 from "../assets/grid_image2.jpg";
+import bg_image1 from "../assets/bg_image1.jpg";
+import portrait_programmer from "../assets/portrait_programmer.jpg";
+import heroImage from "../assets/heroImage.jpg";
 
 export const navLinks = [
     {
@@ -25,25 +39,25 @@ export const navLinks = [
 
 export const processes = [
     {
-        title: "Book a consultation",
+        title: "Process 1",
         description: "Let's kick things off! You schedule a meeting with our team to discuss your needs, ideas, and project goals",
         Image: Images.step_1,
     },
 
     {
-        title: "Consultation with You",
+        title: "Process 2",
         description: "We listen, ask the right questions and gather all the information needed to bring your vision to life",
         Image: Images.step_2,
     },
 
     {
-        title: "UI/UX Review and Approval",
+        title: "Process 3",
         description: "We present the user interface design and user experience flow to you for feedback and approval before development begins",
         Image: Images.step_3,
     },
 
     {
-        title: "Project Delivery",
+        title: "Process 4",
         description: "Once everything is finalized, we deliver the completed work ready for launch or handoff",
         Image: Images.step_4,
     },
@@ -129,3 +143,24 @@ export const reasons = [
     },
 
 ];
+
+export const tech_stack = [
+    {title: "React"},
+    {title: ".Net"},
+    {title: "Python"},
+    {title: "C#"},
+    {title: "Rails"},
+    {title: "NodeJs"},
+    {title: "Angular"},
+    {title: "Swift"},
+    {title: "Javascript"},
+    {title: "PHP"},
+    {title: "C++"},
+    {title: "VueJs"},
+    {title: "Golang"},
+    {title: "IOS"},
+    {title: "Andriod"},
+]
+export const tech_stack_2 = [
+
+]

@@ -1,6 +1,7 @@
 import React from 'react';
 import {Images} from "../components/images.jsx";
-import {engagementModels, processes, reasons} from "../utils/imports.jsx";
+import {engagementModels, processes, reasons, tech_stack} from "../utils/imports.jsx";
+
 
 export default function Home() {
     return (
@@ -149,18 +150,52 @@ export default function Home() {
             </section>
 
             {/*Work Processes*/}
-            <section className={`my-16 max-w-7xl mx-auto`}>
-                <h1 className={`text-center text-5xl font-[Outfit] mb-5 font-semibold`}>We Follow the Process</h1>
-                <h3 className={`text-center text-lg font-[Outfit] mb-8 `}>Our Work Process</h3>
-                {/*<span className={`text-center`}>Our Work Process</span>*/}
-                <div className={`grid grid-cols-4`}>
-                    {processes.map((process, index) => (
-                        <div key={`${index}`} >
-                            <img src={`${process.Image}`} alt="process" className={` m-auto w-[198px]`}/>
-                            <h3 className={`text-center font-[Outfit] font-semibold my-3`}>{process.title}</h3>
-                            <p className={`text-center font-[Outfit] font-[300] text-[15px]`}>{process.description}</p>
+            <section className={`my-16 p-10`}>
+                <div className="max-w-7xl mx-auto">
+                    <div className="grid grid-cols-2 gap-8">
+                        {/* Left column with image */}
+                        <div className="relative">
+                            <img
+                                src={`${Images.portrait_programmer}`}
+                                alt="Professional Developer"
+                                className="w-full h-[800px] object-cover rounded-lg shadow-lg"
+                            />
+
                         </div>
-                    ))}
+
+                        {/* Right column with processes */}
+                        <div className="pl-8">
+                            <span className="capitalize text-[#bcd1dc] font-[Poppins]">our process</span>
+                            <h2 className="text-4xl font-[700] text-[#0c4d69] font-[Outfit] mb-8">
+                                How We Approach<br />Development Projects
+                            </h2>
+
+                            <div className="mb-3 rounded-lg max-w-[80%]">
+                                <h3 className="text-[#0c4d69] text-xl font-semibold font-[Outfit] mb-2">
+                                    Expert Development Team
+                                </h3>
+                                <p className="text-slate-700 font-[Outfit]">
+                                    Our experienced developers follow industry best practices to deliver high-quality solutions
+                                </p>
+                            </div>
+
+                            <div className="space-y-6">
+                                {processes.map((process, index) => (
+                                    <div key={`${index}`} className="flex items-start gap-4 p-4 bg-white/70 backdrop-blur-sm rounded-lg transition-all duration-300 hover:shadow-md">
+                                        <img src={process.Image} alt="Planning" className="w-12 h-12" />
+                                        <div>
+                                            <h3 className="text-xl font-semibold text-[#2a919f] mb-2 font-[Outfit]">
+                                                {process.title}
+                                            </h3>
+                                            <p className="text-slate-600 font-[Outfit]">
+                                                {process.description}
+                                            </p>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -184,11 +219,16 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="w-full flex font-[Outfit] relative">
-                <div className={`bg-gray-300 m-auto pt-16 justify-center text-center w-full h-[125px]`}>
+            <section className="font-[Outfit]  pt-16">
+                <div className={`bg-gray-300 m-auto justify-center text-center w-full h-[125px]`}>
                     <h2 className={`text-5xl font-[600]`}>Technologies & Frameworks</h2>
+                    <h3>Yes. We cover your tech stack.</h3>
+                    <span> Crafting Solutions with Cutting-Edge Development & Design Tools</span>
                 </div>
+
+
             </section>
+
 
         </div>
     )

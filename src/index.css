@@ -58,3 +58,44 @@
     /*width: 10rem;*/
     /*height: 10rem;*/
 }
+
+
+
+
+
+/*.scroll-content {*/
+/*    display: inline-block;*/
+/*    white-space: nowrap;*/
+/*    animation: scroll-left 20s linear infinite;*/
+/*    animation-play-state: running;*/
+
+/*}*/
+
+
+
+.animate-scroll {
+    animation: scroll-left 20s linear infinite;
+}
+.animate-scroll {
+    animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
