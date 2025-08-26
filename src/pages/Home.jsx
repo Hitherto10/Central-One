@@ -1,6 +1,6 @@
 import React from 'react';
 import {Images} from "../components/images.jsx";
-import {engagementModels, processes, reasons, tech_stack} from "../utils/imports.jsx";
+import {engagementModels, processes, reasons, technologies} from "../utils/imports.jsx";
 
 
 export default function Home() {
@@ -30,7 +30,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="relative text-white mx-auto px-4 lg:px-8 py-8 text-center font-[Poppins] mb-16">
+            <section className="relative  mx-auto px-4 lg:px-8 py-8 text-center font-[Poppins] mb-16">
                 <h2 className="text-3xl lg:text-4xl lg:pt-10 font-bold font-['Poppins'] text-[var(--base)] mb-6 text-center">
                     Our Pillars of Excellence
                 </h2>
@@ -200,18 +200,18 @@ export default function Home() {
             </section>
 
             <section className="w-full flex justify-center relative">
-                <div className={`bg-gray-300 w-full h-[125px] bottom-0 absolute`}></div>
-                <div className={`h-[250px] z-10 overflow-y-hidden`}>
+                <div className={`bg-[#f8f8f8] w-full h-[125px] bottom-0 absolute`}></div>
+                <div className={`h-[280px] z-10 overflow-y-hidden`}>
                     <img
                         src={`${Images.bg_image1}`}
                         loading="lazy"
                         alt=""
                     />
                 </div>
-                <div className="absolute p-8 text-white my-auto content-center z-20 w-[1000px] h-[250px] bg-[var(--translucentbg)] max-w-7xl">
+                <div className="absolute p-8 text-white my-auto content-center z-20 w-[1000px] h-[280px] bg-[rgba(12,77,105,0.73)] max-w-7xl">
                     <span className={`capitalize text-sm font-[Poppins]`}>We Carry more Than Just Good Coding Skills</span>
                     <div className={`flex justify-between font-[Outfit] h-auto items-center`}>
-                        <h2 className=" my-auto text-4xl font-[700] ">let's built your website together!</h2>
+                        <h2 className=" my-auto text-4xl font-[700] ">let's build your website together!</h2>
                         <button className={`border text-lg font-[500] hover:cursor-pointer text-white text-[17px] px-4 py-2.5 w-fit rounded-lg`}>
                             Contact Us
                         </button>
@@ -219,17 +219,43 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="font-[Outfit]  pt-16">
-                <div className={`bg-gray-300 m-auto justify-center text-center w-full h-[125px]`}>
-                    <h2 className={`text-5xl font-[600]`}>Technologies & Frameworks</h2>
-                    <h3>Yes. We cover your tech stack.</h3>
-                    <span> Crafting Solutions with Cutting-Edge Development & Design Tools</span>
+            <section className="font-[Outfit] bg-[#f8f8f8] ">
+                <div className={` pt-28 `}>
+                    <div className={`m-auto justify-center text-center max-w-6xl h-[125px]`}>
+                        {/*<h2 className={`text-5xl font-[600]`}>Technologies & Frameworks</h2>*/}
+                        <span className={`text-5xl font-[600] font-[Sora]`}>
+                        Crafting Solutions with Cutting-Edge <br/> Development & Design Tools
+                    </span>
+                    </div>
+
+                    <div className={`grid grid-cols-3 gap-10 max-w-7xl m-auto py-10`}>
+                        {technologies.map((technology, index) => (
+                            <div key={`${index}`}>
+                                <h2 className={`text-[25px] font-[600] my-4 font-[Sora]`}>{technology.section}</h2>
+                                <div className={`flex gap-3 flex-wrap max-w-[400px] w-auto flex-row text-nowrap`}>
+                                    {technology.tech.map((tech, index) => (
+                                        <div className={`bg-gray-200 px-6 rounded-2xl flex py-1 gap-4 flex-row flex-nowrap items-center`} key={`${index}`}>
+                                            <img src={`${tech.icon}`} className={`w-8`} alt=""/>
+                                            <span>{tech.name}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-
-
             </section>
 
+            <div className={`flex py-8 px-5 font-[Outfit] h-[500px] flex-col`}  style={{   backgroundImage: `url(${Images.bg_image2})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center' }}>
 
+                <h3 className={`text-white font-[500] text-[35px] mb-1`}> 15+</h3>
+                <span className={`capitalize text-white font-[Poppins]`}>countries worldwide</span>
+                <p className={`text-white mb-6 leading-7`}> Our product design service let's you prototype, test and validate your ideas</p>
+                <a className={`text-white`}> Learn More</a>
+
+            </div>
         </div>
     )
 }

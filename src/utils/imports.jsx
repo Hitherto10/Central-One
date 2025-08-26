@@ -1,18 +1,4 @@
 import {Images} from "../components/images.jsx";
-import ldn_avatar from "../assets/ldn-avatar.svg";
-import right_Arrow from "../assets/right-arrow.png";
-import code_screen from "../assets/code-screen.svg";
-import step_1 from "../assets/04.svg";
-import step_2 from "../assets/03.svg";
-import step_3 from "../assets/02.svg";
-import step_4 from "../assets/01.svg";
-import logo_1 from "../assets/logo_1.svg";
-import logo_2 from "../assets/logo_2.svg";
-import grid_image1 from "../assets/grid_image1.jpg";
-import grid_image2 from "../assets/grid_image2.jpg";
-import bg_image1 from "../assets/bg_image1.jpg";
-import portrait_programmer from "../assets/portrait_programmer.jpg";
-import heroImage from "../assets/heroImage.jpg";
 
 export const navLinks = [
     {
@@ -161,6 +147,65 @@ export const tech_stack = [
     {title: "IOS"},
     {title: "Andriod"},
 ]
-export const tech_stack_2 = [
 
+export const technologies = [
+    {
+        section: 'Frontend',
+        tech: [
+            {name: 'React', icon: Images.reactjs},
+            {name: 'Angular', icon: Images.angular},
+            {name: 'VueJs', icon: Images.vuejs},
+            {name: 'Javascript', icon: Images.javascript},
+            {name: 'HTML', icon: Images.html5},
+            {name: 'CSS', icon: Images.css3},
+            {name: 'Swift', icon: Images.swift},
+            {name: 'Kotlin', icon: Images.kotlin},
+            {name: 'React Native', icon: Images.reactjs},
+            {name: 'Tailwind CSS', icon: Images.tailwindcss},
+            {name: 'Bootstrap', icon: Images.bootstrap}
+        ]
+    },
+    {
+        section: 'Back-End',
+        icon: '',
+        tech: [
+            {name: 'Node.js', icon: Images.nodejs},
+            {name: 'Express.js', icon: Images.expressjs},
+            {name: 'Next.js', icon: Images.nextjs},
+            {name: 'C#', icon: Images.c_sharp},
+            {name: 'PHP', icon: Images.php},
+            {name: 'Apache', icon: Images.apache}
+        ]
+    },
+    {
+        section: 'Database',
+        icon: '',
+        tech: [
+            {name: 'MySQL', icon: Images.mysql},
+            {name: 'PostgreSQL', icon: Images.postgresql},
+            {name: 'MongoDB', icon: Images.mongodb},
+            {name: 'Firebase', icon: Images.firebase}
+        ]
+    },
+    {
+        section: 'Platform',
+        icon: '',
+        tech: [
+            {name: 'Docker', icon: Images.docker},
+            {name: 'Visual Studio Code', icon: Images.vscode},
+            {name: 'WordPress', icon: Images.wordpress},
+            {name: 'Heroku', icon: Images.heroku},
+            {name: 'Netlify', icon: Images.netlify},
+            {name: 'Vercel', icon: Images.triangle}
+        ]
+    },
+    {
+        section: 'Cloud',
+        icon: '',
+        tech: [
+            {name: 'AWS', icon: Images.aws},
+            {name: 'Azure', icon: Images.azure},
+            {name: 'Google Cloud', icon: Images.googleCloud}
+        ]
+    },
 ]
