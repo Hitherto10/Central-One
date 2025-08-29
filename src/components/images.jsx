@@ -41,7 +41,7 @@ import vuejs from '../assets/icons/icons8-vue-js-48.png'
 import wordpress from '../assets/icons/icons8-wordpress-48.png'
 import apache from '../assets/icons/icons8-apache-48.png'
 import kotlin from '../assets/icons/icons8-kotlin-48.png'
-import bg_image2 from '../assets/bg_image2.svg'
+import bg_image2 from '../assets/bg_Image2.jpg'
 import bg_image3 from '../assets/bg_image3.svg'
 import bg_image4 from '../assets/bg_image4.png'
 

@@ -1,15 +1,16 @@
 import React from 'react';
 import {Images} from "../components/images.jsx";
-import {engagementModels, processes, reasons, technologies} from "../utils/imports.jsx";
+import {engagementModels, navLinks, processes, reasons, technologies} from "../utils/imports.jsx";
 
 
 export default function Home() {
     return (
         <div className={`m-auto relative bg-[#eef2fb]`}>
-            <section className={`max-w-7xl m-auto relative`}>
+            <section className={`m-auto relative`}>
                 {/*Hero Section*/}
-                <div className={`m-auto max-w-7xl py-20 `}>
-                    <div className={`justify-center ml-20 relative`}>
+                {/*<img src={`${Images.bg_image2}`} className={`w-screen h-[700px] object-cover absolute z-0`} alt=""/>*/}
+                <div className={`m-auto border-5 max-w-7xl py-20 `}>
+                    <div className={`justify-center relative`}>
                         <h2 className={`text-[#0c4d69] h-10 text-[17px] font-[Outfit] tracking-widest font-[600]`}>A TRUSTED COMPANY</h2>
 
                         <div className={`mb-3`}>
@@ -222,10 +223,9 @@ export default function Home() {
             <section className="font-[Outfit] bg-[#f8f8f8] ">
                 <div className={` pt-28 `}>
                     <div className={`m-auto justify-center text-center max-w-6xl h-[125px]`}>
-                        {/*<h2 className={`text-5xl font-[600]`}>Technologies & Frameworks</h2>*/}
                         <span className={`text-5xl font-[600] font-[Sora]`}>
                         Crafting Solutions with Cutting-Edge <br/> Development & Design Tools
-                    </span>
+                        </span>
                     </div>
 
                     <div className={`grid grid-cols-3 gap-10 max-w-7xl m-auto py-10`}>
@@ -246,16 +246,161 @@ export default function Home() {
                 </div>
             </section>
 
-            <div className={`flex py-8 px-5 font-[Outfit] h-[500px] flex-col`}  style={{   backgroundImage: `url(${Images.bg_image2})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center' }}>
+            {/*<section className={`flex font-[Outfit] h-[500px] flex-col`}>*/}
+            {/*    <img src={`${Images.bg_image2}`} className={`w-screen h-[500px] object-cover absolute z-0`} alt=""/>*/}
 
-                <h3 className={`text-white font-[500] text-[35px] mb-1`}> 15+</h3>
-                <span className={`capitalize text-white font-[Poppins]`}>countries worldwide</span>
-                <p className={`text-white mb-6 leading-7`}> Our product design service let's you prototype, test and validate your ideas</p>
-                <a className={`text-white`}> Learn More</a>
+            {/*    <div className={`grid z-30 grid-cols-2 max-w-7xl m-auto p-20`}>*/}
+            {/*        <div className={` text-white`}>*/}
+            {/*            <h2 className={`text-5xl mb-8 font-[600] font-[Sora]`}>*/}
+            {/*                Ready to supercharge your business*/}
+            {/*            </h2>*/}
+            {/*            <p className={`text-[#bcd1dc] text-[18px]`}> Ask about Central One products, pricing, implementation, or anything else. Our highly trained reps are standing by, ready to help.</p>*/}
+            {/*        </div>*/}
+            {/*        <div className={`flex flex-col gap-5 items-center m-auto`}>*/}
+            {/*            <button className={`bg-[#0c4d69] text-lg font-[500] hover:cursor-pointer text-white text-[17px] px-4 py-2.5 w-fit rounded-lg`}>*/}
+            {/*                Contact Us*/}
+            {/*            </button>*/}
+            {/*            <span className={`text-[#bcd1dc] text-[18px]`}> Free consultation. Support 24/7</span>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</section>*/}
 
-            </div>
+            <section
+                className="flex flex-col lg:flex-row w-[90%] lg:w-[70%] mx-auto bg-[#f8f8f8] my-20 rounded-lg overflow-hidden">
+
+                <form id="contact-form" className="w-full lg:w-3/5 p-6 lg:p-10 space-y-5 font-[Montserrat] text-[13px]">
+                    <div>
+                        {/*{showSuccessMessage && (*/}
+                        {/*    <span className="block font-[Outfit] mb-4 text-green-600 font-semibold">*/}
+                        {/*    Your inquiry has been submitted successfully!*/}
+                        {/*</span>*/}
+                        {/*)}*/}
+                        <h1 className="text-3xl lg:text-4xl font-bold font-[Outfit] text-gray-800 mb-8 lg:mb-12">
+                            Do you have a specific inquiry?<br/>
+                            <span style={{color: "#669140"}}>Reach out!</span>
+                        </h1>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-5">
+                            <input type="text" name="name" placeholder="Name" className="input rounded-md font-[Montserrat] text-[13px] p-4 border bg-[#eef2fb]"/>
+                            <input type="email" name="email" placeholder="Email" className="input rounded-md font-[Montserrat] text-[13px] p-4 border bg-[#eef2fb]"/>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-5">
+                            <input type="text" name="company" placeholder="Company" className="input rounded-md font-[Montserrat] text-[13px] p-4 border bg-[#eef2fb]"/>
+                            <input type="tel" name="phoneNumber" placeholder="Phone" className="input rounded-md font-[Montserrat] text-[13px] p-4 border bg-[#eef2fb]"/>
+                        </div>
+
+                        <textarea
+                            name="message"
+                            placeholder="Describe your need"
+                            rows={4}
+                            className="w-full px-3 mb-5 border border-gray-300 rounded focus:outline-none font-[Montserrat] text-[13px] p-4 bg-[#eef2fb]"
+                        />
+
+                        <div className="flex items-start text-sm mb-4">
+                            <label htmlFor="privacy-policy" className="">
+                                By submitting this form I agree to the{" "}
+                                <a target="_blank"  rel="noopener noreferrer" href="https://app.websitepolicies.com/policies/view/tbo4hkh3" className="text-blue-500 hover:underline">
+                                    Privacy Policy{" "}
+                                </a>
+                                and{" "}
+                                <a target="_blank"  rel="noopener noreferrer" href="https://www.termsfeed.com/live/3ad77bcf-a04e-40c1-9978-4e44bf3e14ee" className="text-blue-500 hover:underline">
+                                    Terms of Service
+                                </a>
+                            </label>
+                        </div>
+
+                        <button
+                            type="submit"
+                            className="px-6 py-2 bg-[#3a3d59] cursor-pointer text-white rounded font-[Montserrat]"
+                        >
+                            Send Inquiry
+                        </button>
+                    </div>
+
+                </form>
+                <div
+                    className="w-full lg:w-2/5 bg-[#0c4d69] text-white flex items-center
+                     justify-center p-8 lg:p-10 lg:rounded-r-lg font-[Outfit]">
+                    <div className="text-center w-full max-w-md space-y-8">
+                        <div>
+                            <h2 className="text-2xl lg:text-3xl font-bold mb-4">
+                                Turning big ideas into real solutions.
+                            </h2>
+                            <p className="text-gray-300">
+                                We’re a passionate startup focused on delivering high-impact digital
+                                products that matter. Let’s build something great together.
+                            </p>
+                        </div>
+
+                        <div className="flex items-start justify-center space-x-3">
+                            {/*<MapPin size={24} className="text-blue-400 mt-1"/>*/}
+                            <div className="text-left">
+                                <p className="font-semibold text-white">Geako Relay</p>
+                                <p className="text-sm text-gray-400 leading-snug">
+                                    Abuja, Nigeria
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="flex items-center justify-center">
+                            <div className="w-6 h-6 bg-blue-500 rounded flex items-center justify-center mr-2">
+                                <span className="text-xs font-bold">@</span>
+                            </div>
+                            <a
+                                href="mailto:info@centralone.com"
+                                className="text-blue-500 hover:underline"
+                            >
+                                info@centralone.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className={`bg-[#0c4d69] text-white`}>
+                <div className={` max-w-6xl m-auto items-center justify-center content-center`}>
+                    <div className={``}>
+                        <img src={`${Images.logo_1}`} className={`bg-transparent m-auto w-1/4`} alt="Logo"/>
+                    </div>
+                    <div className={`grid grid-cols-3 place-items-center gap-10`}>
+                        <div className={`flex flex-col items-center justify-center mx-auto text-center`}>
+                            <img src={`${Images.angular}`} alt="Logo" className="mx-auto mb-2"/>
+                            <h3 className="mx-auto">Random location</h3>
+                            <span className="mx-auto">Our Address</span>
+                        </div>
+                        <div className={`flex flex-col items-center justify-center mx-auto text-center`}>
+                            <img src={`${Images.angular}`} alt="Logo" className="mx-auto mb-2"/>
+                            <h3 className="mx-auto">Random location</h3>
+                            <span className="mx-auto">Our Address</span>
+                        </div>
+                        <div className={`flex flex-col items-center justify-center mx-auto text-center`}>
+                            <img src={`${Images.angular}`} alt="Logo" className="mx-auto mb-2"/>
+                            <h3 className="mx-auto">Random location</h3>
+                            <span className="mx-auto">Our Address</span>
+                        </div>
+                    </div>
+                    <div className={` justify-center text-center content-center items-center m-auto my-10 gap-5 flex flex-col`}>
+                        <div className={`flex flex-row m-auto gap-5 `}>
+                            {
+                                navLinks.map((navLink, index) => {
+                                    return ( <ul key={`${index}`}> <li className={`hover:cursor-pointer font-[500] text-lg  `}> {navLink.name}</li> </ul> )
+                                })
+                            }
+                        </div>
+                        <span> Copyright © 2025 Central One. All rights reserved</span>
+
+                        <div className={`flex flex-row gap-5 m-auto`}>
+                            <img src={`${Images.angular}`} alt="Facebook" className="w-8 h-8"/>
+                            <img src={`${Images.angular}`} alt="Facebook" className="w-8 h-8"/>
+                            <img src={`${Images.angular}`} alt="Facebook" className="w-8 h-8"/>
+                            <img src={`${Images.angular}`} alt="Facebook" className="w-8 h-8"/>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
         </div>
     )
 }
