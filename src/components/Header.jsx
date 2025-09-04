@@ -4,9 +4,9 @@ import {Images} from "./images.jsx";
 
 export default function Header() {
     return (
-        <div className="flex items-center relative justify-center">
+        <div className="flex items-center shadow justify-center z-10 sticky top-0">
             <header className="relative w-full">
-                <div className="bg-white z-20 font-[Outfit] py-5 px-5 content-center items-center justify-between flex flex-row w-full h-17">
+                <div className="bg-white z-20 font-[Outfit] py-5 px-5 content-center items-center justify-between flex flex-row w-full h-17 ">
                     <div className="hover:cursor-pointer w-1/4">
                         <img src={`${Images.logo_1}`} alt="Logo"/>
                     </div>

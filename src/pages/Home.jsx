@@ -6,10 +6,12 @@ import {engagementModels, navLinks, processes, reasons, technologies} from "../u
 export default function Home() {
     return (
         <div className={`m-auto relative bg-[#eef2fb]`}>
-            <section className={`m-auto relative`}>
-                {/*Hero Section*/}
-                {/*<img src={`${Images.bg_image2}`} className={`w-screen h-[700px] object-cover absolute z-0`} alt=""/>*/}
-                <div className={`m-auto border-5 max-w-7xl py-20 `}>
+            {/*Hero Section*/}
+            <section className={`m-auto relative h-[700px]`}>
+
+                    <img src={`${Images.bg_image2}`} className="absolute inset-0 w-full h-full object-cover" alt=""/>
+
+                <div className={`border max-w-6xl h-full content-center p-20`}>
                     <div className={`justify-center relative`}>
                         <h2 className={`text-[#0c4d69] h-10 text-[17px] font-[Outfit] tracking-widest font-[600]`}>A TRUSTED COMPANY</h2>
 
@@ -31,6 +33,7 @@ export default function Home() {
                 </div>
             </section>
 
+            {/*Engagement Models Section*/}
             <section className="relative  mx-auto px-4 lg:px-8 py-8 text-center font-[Poppins] mb-16">
                 <h2 className="text-3xl lg:text-4xl lg:pt-10 font-bold font-['Poppins'] text-[var(--base)] mb-6 text-center">
                     Our Pillars of Excellence
@@ -65,6 +68,7 @@ export default function Home() {
 
             </section>
 
+            {/*Why Choose Us Section*/}
             <section className={`w-full max-h-[750px] mb-32 bg-[#0c4d69] py-20`}>
                 <div className={`m-auto text-center`}>
                     <span className={`capitalize text-[#bcd1dc] font-[Poppins]`}>why choose us</span>
@@ -122,6 +126,7 @@ export default function Home() {
                 </div>
             </section>
 
+            {/*Services Section*/}
             <section className="text-black mt-36 px-6 font-[Outfit] mx-auto max-w-6xl justify-center py-8">
                 <span className={`capitalize font-[Poppins]`}>Our Services</span>
                 <div className={`flex justify-between h-auto mb-12 items-center`}>
@@ -200,6 +205,7 @@ export default function Home() {
                 </div>
             </section>
 
+            {/*Call to Action Section*/}
             <section className="w-full flex justify-center relative">
                 <div className={`bg-[#f8f8f8] w-full h-[125px] bottom-0 absolute`}></div>
                 <div className={`h-[280px] z-10 overflow-y-hidden`}>
@@ -220,7 +226,10 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="font-[Outfit] bg-[#f8f8f8] ">
+            {/*Technologies Section & Contact Form*/}
+            <section className="font-[Outfit] pb-20 bg-[#f8f8f8] ">
+
+                {/*Technologies Section*/}
                 <div className={` pt-28 `}>
                     <div className={`m-auto justify-center text-center max-w-6xl h-[125px]`}>
                         <span className={`text-5xl font-[600] font-[Sora]`}>
@@ -244,163 +253,102 @@ export default function Home() {
                         ))}
                     </div>
                 </div>
-            </section>
 
-            {/*<section className={`flex font-[Outfit] h-[500px] flex-col`}>*/}
-            {/*    <img src={`${Images.bg_image2}`} className={`w-screen h-[500px] object-cover absolute z-0`} alt=""/>*/}
-
-            {/*    <div className={`grid z-30 grid-cols-2 max-w-7xl m-auto p-20`}>*/}
-            {/*        <div className={` text-white`}>*/}
-            {/*            <h2 className={`text-5xl mb-8 font-[600] font-[Sora]`}>*/}
-            {/*                Ready to supercharge your business*/}
-            {/*            </h2>*/}
-            {/*            <p className={`text-[#bcd1dc] text-[18px]`}> Ask about Central One products, pricing, implementation, or anything else. Our highly trained reps are standing by, ready to help.</p>*/}
-            {/*        </div>*/}
-            {/*        <div className={`flex flex-col gap-5 items-center m-auto`}>*/}
-            {/*            <button className={`bg-[#0c4d69] text-lg font-[500] hover:cursor-pointer text-white text-[17px] px-4 py-2.5 w-fit rounded-lg`}>*/}
-            {/*                Contact Us*/}
-            {/*            </button>*/}
-            {/*            <span className={`text-[#bcd1dc] text-[18px]`}> Free consultation. Support 24/7</span>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*</section>*/}
-
-            <section
-                className="flex flex-col lg:flex-row w-[90%] lg:w-[70%] mx-auto bg-[#f8f8f8] my-20 rounded-lg overflow-hidden">
-
-                <form id="contact-form" className="w-full lg:w-3/5 p-6 lg:p-10 space-y-5 font-[Montserrat] text-[13px]">
-                    <div>
-                        {/*{showSuccessMessage && (*/}
-                        {/*    <span className="block font-[Outfit] mb-4 text-green-600 font-semibold">*/}
-                        {/*    Your inquiry has been submitted successfully!*/}
-                        {/*</span>*/}
-                        {/*)}*/}
-                        <h1 className="text-3xl lg:text-4xl font-bold font-[Outfit] text-gray-800 mb-8 lg:mb-12">
-                            Do you have a specific inquiry?<br/>
-                            <span style={{color: "#669140"}}>Reach out!</span>
-                        </h1>
-
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-5">
-                            <input type="text" name="name" placeholder="Name" className="input rounded-md font-[Montserrat] text-[13px] p-4 border bg-[#eef2fb]"/>
-                            <input type="email" name="email" placeholder="Email" className="input rounded-md font-[Montserrat] text-[13px] p-4 border bg-[#eef2fb]"/>
-                        </div>
-
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-5">
-                            <input type="text" name="company" placeholder="Company" className="input rounded-md font-[Montserrat] text-[13px] p-4 border bg-[#eef2fb]"/>
-                            <input type="tel" name="phoneNumber" placeholder="Phone" className="input rounded-md font-[Montserrat] text-[13px] p-4 border bg-[#eef2fb]"/>
-                        </div>
-
-                        <textarea
-                            name="message"
-                            placeholder="Describe your need"
-                            rows={4}
-                            className="w-full px-3 mb-5 border border-gray-300 rounded focus:outline-none font-[Montserrat] text-[13px] p-4 bg-[#eef2fb]"
-                        />
-
-                        <div className="flex items-start text-sm mb-4">
-                            <label htmlFor="privacy-policy" className="">
-                                By submitting this form I agree to the{" "}
-                                <a target="_blank"  rel="noopener noreferrer" href="https://app.websitepolicies.com/policies/view/tbo4hkh3" className="text-blue-500 hover:underline">
-                                    Privacy Policy{" "}
-                                </a>
-                                and{" "}
-                                <a target="_blank"  rel="noopener noreferrer" href="https://www.termsfeed.com/live/3ad77bcf-a04e-40c1-9978-4e44bf3e14ee" className="text-blue-500 hover:underline">
-                                    Terms of Service
-                                </a>
-                            </label>
-                        </div>
-
-                        <button
-                            type="submit"
-                            className="px-6 py-2 bg-[#3a3d59] cursor-pointer text-white rounded font-[Montserrat]"
-                        >
-                            Send Inquiry
-                        </button>
-                    </div>
-
-                </form>
+                {/*Contact Form Section*/}
                 <div
-                    className="w-full lg:w-2/5 bg-[#0c4d69] text-white flex items-center
-                     justify-center p-8 lg:p-10 lg:rounded-r-lg font-[Outfit]">
-                    <div className="text-center w-full max-w-md space-y-8">
+                    className="flex flex-col lg:flex-row w-[90%] lg:w-[70%] mx-auto bg-[#eef2fb] shadow-md mt-20 rounded-lg overflow-hidden">
+
+                    <form id="contact-form" className="w-full lg:w-3/5 p-6 lg:p-10 space-y-5 font-[Montserrat] text-[13px]">
                         <div>
-                            <h2 className="text-2xl lg:text-3xl font-bold mb-4">
-                                Turning big ideas into real solutions.
-                            </h2>
-                            <p className="text-gray-300">
-                                We’re a passionate startup focused on delivering high-impact digital
-                                products that matter. Let’s build something great together.
-                            </p>
+                            {/*{showSuccessMessage && (*/}
+                            {/*    <span className="block font-[Outfit] mb-4 text-green-600 font-semibold">*/}
+                            {/*    Your inquiry has been submitted successfully!*/}
+                            {/*</span>*/}
+                            {/*)}*/}
+                            <h1 className="text-3xl lg:text-4xl font-bold font-[Outfit] text-gray-800 mb-8 lg:mb-12">
+                                Do you have a specific inquiry?<br/>
+                                <span style={{color: "#669140"}}>Reach out!</span>
+                            </h1>
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-5">
+                                <input type="text" name="name" placeholder="Name" className="input rounded-md font-[Montserrat] text-[13px] p-4 border border-gray-300 bg-[#f8f8f8]"/>
+                                <input type="email" name="email" placeholder="Email" className="input rounded-md font-[Montserrat] text-[13px] p-4 border border-gray-300 bg-[#f8f8f8]"/>
+                            </div>
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-5">
+                                <input type="text" name="company" placeholder="Company" className="input rounded-md font-[Montserrat] text-[13px] p-4 border border-gray-300 bg-[#f8f8f8]"/>
+                                <input type="tel" name="phoneNumber" placeholder="Phone" className="input rounded-md font-[Montserrat] text-[13px] p-4 border border-gray-300 bg-[#f8f8f8]"/>
+                            </div>
+
+                            <textarea
+                                name="message"
+                                placeholder="Describe your need"
+                                rows={4}
+                                className="w-full px-3 mb-5 border border-gray-300 rounded focus:outline-none font-[Montserrat] text-[13px] p-4 bg-[#f8f8f8]"
+                            />
+
+                            <div className="flex items-start text-sm mb-4">
+                                <label htmlFor="privacy-policy" className="">
+                                    By submitting this form I agree to the{" "}
+                                    <a target="_blank"  rel="noopener noreferrer" href="https://app.websitepolicies.com/policies/view/tbo4hkh3" className="text-blue-500 hover:underline">
+                                        Privacy Policy{" "}
+                                    </a>
+                                    and{" "}
+                                    <a target="_blank"  rel="noopener noreferrer" href="https://www.termsfeed.com/live/3ad77bcf-a04e-40c1-9978-4e44bf3e14ee" className="text-blue-500 hover:underline">
+                                        Terms of Service
+                                    </a>
+                                </label>
+                            </div>
+
+                            <button
+                                type="submit"
+                                className="px-6 py-2 bg-[#3a3d59] cursor-pointer text-white rounded font-[Montserrat]"
+                            >
+                                Send Inquiry
+                            </button>
                         </div>
 
-                        <div className="flex items-start justify-center space-x-3">
-                            {/*<MapPin size={24} className="text-blue-400 mt-1"/>*/}
-                            <div className="text-left">
-                                <p className="font-semibold text-white">Geako Relay</p>
-                                <p className="text-sm text-gray-400 leading-snug">
-                                    Abuja, Nigeria
+                    </form>
+                    <div
+                        className="w-full lg:w-2/5 bg-[#0c4d69] text-white flex items-center
+                     justify-center p-8 lg:p-10 lg:rounded-r-lg font-[Outfit]">
+                        <div className="text-center w-full max-w-md space-y-8">
+                            <div>
+                                <h2 className="text-2xl lg:text-3xl font-bold mb-4">
+                                    Turning big ideas into real solutions.
+                                </h2>
+                                <p className="text-gray-300">
+                                    We’re a passionate startup focused on delivering high-impact digital
+                                    products that matter. Let’s build something great together.
                                 </p>
                             </div>
-                        </div>
 
-                        <div className="flex items-center justify-center">
-                            <div className="w-6 h-6 bg-blue-500 rounded flex items-center justify-center mr-2">
-                                <span className="text-xs font-bold">@</span>
+                            <div className="flex items-start justify-center space-x-3">
+                                {/*<MapPin size={24} className="text-blue-400 mt-1"/>*/}
+                                <div className="text-left">
+                                    <p className="font-semibold text-white">Central One</p>
+                                    <p className="text-sm text-gray-400 leading-snug">
+                                        Abuja, Nigeria
+                                    </p>
+                                </div>
                             </div>
-                            <a
-                                href="mailto:info@centralone.com"
-                                className="text-blue-500 hover:underline"
-                            >
-                                info@centralone.com
-                            </a>
+
+                            <div className="flex items-center justify-center">
+                                <div className="w-6 h-6 bg-blue-500 rounded flex items-center justify-center mr-2">
+                                    <span className="text-xs font-bold">@</span>
+                                </div>
+                                <a
+                                    href="mailto:info@centralone.com"
+                                    className="text-blue-500 hover:underline"
+                                >
+                                    info@centralone.com
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className={`bg-[#0c4d69] text-white`}>
-                <div className={` max-w-6xl m-auto items-center justify-center content-center`}>
-                    <div className={``}>
-                        <img src={`${Images.logo_1}`} className={`bg-transparent m-auto w-1/4`} alt="Logo"/>
-                    </div>
-                    <div className={`grid grid-cols-3 place-items-center gap-10`}>
-                        <div className={`flex flex-col items-center justify-center mx-auto text-center`}>
-                            <img src={`${Images.angular}`} alt="Logo" className="mx-auto mb-2"/>
-                            <h3 className="mx-auto">Random location</h3>
-                            <span className="mx-auto">Our Address</span>
-                        </div>
-                        <div className={`flex flex-col items-center justify-center mx-auto text-center`}>
-                            <img src={`${Images.angular}`} alt="Logo" className="mx-auto mb-2"/>
-                            <h3 className="mx-auto">Random location</h3>
-                            <span className="mx-auto">Our Address</span>
-                        </div>
-                        <div className={`flex flex-col items-center justify-center mx-auto text-center`}>
-                            <img src={`${Images.angular}`} alt="Logo" className="mx-auto mb-2"/>
-                            <h3 className="mx-auto">Random location</h3>
-                            <span className="mx-auto">Our Address</span>
-                        </div>
-                    </div>
-                    <div className={` justify-center text-center content-center items-center m-auto my-10 gap-5 flex flex-col`}>
-                        <div className={`flex flex-row m-auto gap-5 `}>
-                            {
-                                navLinks.map((navLink, index) => {
-                                    return ( <ul key={`${index}`}> <li className={`hover:cursor-pointer font-[500] text-lg  `}> {navLink.name}</li> </ul> )
-                                })
-                            }
-                        </div>
-                        <span> Copyright © 2025 Central One. All rights reserved</span>
-
-                        <div className={`flex flex-row gap-5 m-auto`}>
-                            <img src={`${Images.angular}`} alt="Facebook" className="w-8 h-8"/>
-                            <img src={`${Images.angular}`} alt="Facebook" className="w-8 h-8"/>
-                            <img src={`${Images.angular}`} alt="Facebook" className="w-8 h-8"/>
-                            <img src={`${Images.angular}`} alt="Facebook" className="w-8 h-8"/>
-
-                        </div>
-                    </div>
-
-                </div>
-            </section>
         </div>
     )
 }
