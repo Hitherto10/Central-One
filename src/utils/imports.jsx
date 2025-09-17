@@ -1,11 +1,7 @@
 import {Images} from "../components/images.jsx";
 
 export const navLinks = [
-    {
-        name: 'Home',
-        link: '/',
-    },
-    {
+   {
         name: 'Services',
         link: '/services',
     },
@@ -15,7 +11,7 @@ export const navLinks = [
     },
     {
         name: 'About Us',
-        link: '/about',
+        link: '/about-us',
     },
     {
         name: 'Portfolio',
