@@ -12,7 +12,7 @@ export const navLinks = [
     },
     {
         name: 'Services',
-        link: '/',
+        link: 'services',
     },
     {
         name: 'Products',
