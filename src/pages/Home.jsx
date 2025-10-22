@@ -248,7 +248,7 @@ export default function Home() {
                             {/* Text content */}
                             <div className="relative z-20">
                                 <h3 className="text-white font-[500] text-2xl sm:text-3xl lg:text-[35px] mb-1">
-                                    15+
+                                    3+
                                 </h3>
                                 <span className="capitalize text-white font-[Poppins] text-sm sm:text-base">
           Countries Worldwide
