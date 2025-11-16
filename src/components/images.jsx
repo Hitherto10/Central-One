@@ -5,6 +5,8 @@ import step_1 from '../assets/04.svg'
 import step_2 from '../assets/03.svg'
 import step_3 from '../assets/02.svg'
 import step_4 from '../assets/01.svg'
+import auth from '../assets/auth.svg'
+import programmer from '../assets/Programmer-cuate.svg'
 import logo_1 from '../assets/logo_1.png'
 import logo_2 from '../assets/logo_2.png'
 import grid_image1 from '../assets/grid_image1.jpg'
@@ -44,20 +46,38 @@ import kotlin from '../assets/icons/icons8-kotlin-48.png'
 import bg_image2 from '../assets/bg_Image2.jpg'
 import bg_image3 from '../assets/bg_image3.svg'
 import bg_image4 from '../assets/bg_image4.png'
+import api from '../assets/API.png'
+import uiux from '../assets/UI-UX-differences-bro.svg'
+import ai_dev from '../assets/Chat-bot-amico.svg'
+import mobile_app from '../assets/App-data-cuate.svg'
+import branding from '../assets/Landing-page-pana.svg'
+import dev_outsourcing from '../assets/dev_outsourcing.jpg'
+import dedicated_team from '../assets/dedicated_team.jpg'
+import staff_aug from '../assets/staff_aug.jpg'
 
 export const Images = {
     ldn_avatar,
     right_Arrow,
     code_screen,
+    staff_aug,
+    dev_outsourcing,
+    dedicated_team,
+    mobile_app,
+    branding,
     step_1,
     step_2,
+    api,
+    uiux,
     step_3,
     step_4,
     bg_image4,
+    auth,
     logo_1,
     logo_2,
+    ai_dev,
     grid_image1,
     grid_image2,
+    programmer,
     bg_image1,
     portrait_programmer,
     heroImage,

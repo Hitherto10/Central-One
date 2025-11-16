@@ -429,11 +429,11 @@ export default function Home() {
                             <div className="flex items-start text-xs sm:text-sm mb-4">
                                 <label htmlFor="privacy-policy">
                                     By submitting this form I agree to the{" "}
-                                    <a target="_blank" rel="noopener noreferrer" href="https://app.websitepolicies.com/policies/view/tbo4hkh3" className="text-blue-500 hover:underline">
+                                    <a target="_blank" rel="noopener noreferrer" href="/">
                                         Privacy Policy
                                     </a>
                                     {" "}and{" "}
-                                    <a target="_blank" rel="noopener noreferrer" href="https://www.termsfeed.com/live/3ad77bcf-a04e-40c1-9978-4e44bf3e14ee" className="text-blue-500 hover:underline">
+                                    <a target="_blank" rel="noopener noreferrer" href="/" className="text-blue-500 hover:underline">
                                         Terms of Service
                                     </a>
                                 </label>
