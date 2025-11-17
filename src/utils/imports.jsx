@@ -16,7 +16,7 @@ export const navLinks = [
     },
     {
         name: 'Products',
-        link: '/',
+        link: 'products',
     },
 ];
 
